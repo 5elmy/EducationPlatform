@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EducationPlatform/static/css/main.12befed6.css",
-    "main.js": "/EducationPlatform/static/js/main.7a406117.js",
+    "main.js": "/EducationPlatform/static/js/main.e3956bed.js",
     "static/media/fa-solid-900.ttf": "/EducationPlatform/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/fa-brands-400.ttf": "/EducationPlatform/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
     "static/media/fa-solid-900.woff2": "/EducationPlatform/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
@@ -13,10 +13,10 @@
     "static/media/fa-v4compatibility.woff2": "/EducationPlatform/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/EducationPlatform/index.html",
     "main.12befed6.css.map": "/EducationPlatform/static/css/main.12befed6.css.map",
-    "main.7a406117.js.map": "/EducationPlatform/static/js/main.7a406117.js.map"
+    "main.e3956bed.js.map": "/EducationPlatform/static/js/main.e3956bed.js.map"
   },
   "entrypoints": [
     "static/css/main.12befed6.css",
-    "static/js/main.7a406117.js"
+    "static/js/main.e3956bed.js"
   ]
 }
