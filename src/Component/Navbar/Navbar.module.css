@@ -1,0 +1,31 @@
+.element{
+    color: var(--gray-gray-700, #4A5568);
+
+/* Headings/Headings-h6 */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 25px; /* 156.25% */
+}
+.contact{
+    color: var(--gray-gray-50, #FAFAFA);
+
+/* Button-text/btn-lg */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 14px; /* 100% */
+
+background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
+color:white ;
+padding : 14px 25px
+}
+.nav
+{
+    background: var(--base-white, #FFF);
+
+/* Shadow/Nav-shadown */
+box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+}

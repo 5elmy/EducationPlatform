@@ -1,0 +1,37 @@
+:root{
+    --btn-color:linear-gradient(225deg, #6675F7 0%, #57007B 100%);
+}
+
+.bg-main{
+    background: var(--shade-light-background, #F9F9FF);
+}
+
+.btn{
+    background: var(--btn-color)
+}
+.register_Color_h3{
+    color: var(--gray-gray-700, #57007B);
+    /* Headings/Headings-h6 */
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 156.25% */
+}
+.color_muted{
+color: #646464;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 27.2px; 
+}
+.specialColor{
+    color: var(--gray-gray-700, #57007B);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 27.2px;
+}
