@@ -5,11 +5,11 @@ import { Outlet } from 'react-router-dom'
 import SideNav from '../SideNav/SideNav'
 
 export default function Main() {
-  let token =  "1"
+  let token =  localStorage.getItem("token")
   return (
     <div>
       {
-      token ==="2"? <>
+      !token ? <>
       
       <NavBar/>
       <Outlet/>
