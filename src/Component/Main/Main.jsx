@@ -18,7 +18,7 @@ export default function Main() {
       
       
       <div className='flex  '>
-      <SideNav/>
+      {/* <SideNav/> */}
       <div className='w-full '>
       <NavBar/>
       <Outlet/>
@@ -29,7 +29,8 @@ export default function Main() {
       </>
         
       }
-      
+       {/* <NavBar/>
+      <Outlet/> */}
     </div>
   )
 }

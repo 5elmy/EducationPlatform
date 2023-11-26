@@ -8,7 +8,7 @@ export default function SideNav() {
           <>
       <div className='h-screen bg-main bg-emerald-300 w-[250px] p-5 flex flex-col justify-between items-center  '>
         <div>
-        <div className='flex justify-between gap-12 items-center '><span className="font-[500] text-inherit font-[Inspiration] text-[30px]" >E-Learning</span> <i style={{color:"#57007B"}} className="fa-solid fa-bars"></i></div>
+        <div className='flex justify-end gap-12 items-center '><i style={{color:"#57007B"}} className="fa-solid fa-bars"></i></div>
         <div className=' flex flex-col gap-5 mt-5'>
             <Link to={"/dashboard"} className='flex gap-5 items-center mt-5'> <HomeIcon/> <span className='element '>Dashboard</span></Link>
             <Link to={"/courses"} className='flex gap-5 items-center mt-5'> <GraduationCap size={14} color='#57007B' /> <span className='element '>Courses</span></Link>

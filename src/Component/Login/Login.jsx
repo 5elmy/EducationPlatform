@@ -36,8 +36,7 @@ export default function Login() {
   })
   return (
     <div className='bg-main h-screen flex justify-center items-center  relative'>
-      <div className='absolute bottom-[23%]  left-[35%] w-[72px] btn h-[72px] rounded-full'></div>
-      <div className='absolute top-[23%]  right-[23.5%] w-[72px] btn h-[72px] rounded-full'></div>
+
       <div className='bg-[#fff]  sm:w-full md:w-1/2 lg:w-1/2 rounded-[15px] shadow-xl py-10 p-5 forCircle  relative'>
         <h3 className='register_Color_h3 text-center text-inherit font-[Inspiration] my-5  '>Sign In Form</h3>
         <form  onSubmit={loginFormik.handleSubmit}>

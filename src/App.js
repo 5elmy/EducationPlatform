@@ -11,6 +11,9 @@ import Courses from './Component/Courses/Courses'
 import Profile from './Component/Profile/Profile'
 import ContactUs from './Component/Contact Us/ContactUs'
 import Settings from './Component/Settings/Settings'
+import DashboardLayOut from './Component/DashBoardLayOut/DashboardLayOut'
+import Lectures from './Component/Lectures/Lectures'
+import SpecialLecture from './Component/SpecialLecture/SpecialLecture'
 
 
 export default function App() {
@@ -27,13 +30,11 @@ export default function App() {
   {path:"/profile" ,  element:<Profile/>},
   {path:"/contact" ,  element:<ContactUs/>},
   {path:"/settings" ,  element:<Settings/>},
- 
-
-
-
-
-
-  ]}
+  {path:"/specialCourse" ,  element:<Lectures/>},
+  {path:"/lecture" ,  element:<SpecialLecture/>},
+  ]},
+  // {path:"/dashboardL" ,element:<DashboardLayOut/>,children:[
+  //   {}]}
   ])
 
 

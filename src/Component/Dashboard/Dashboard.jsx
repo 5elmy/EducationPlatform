@@ -2,28 +2,31 @@ import React from 'react'
 import "./style.css"
 import { Divider } from '@nextui-org/react'
 import CardComponent from '../../utils/Card/Card'
+import { Link } from 'react-router-dom'
 export default function Dashboard() {
   return (
    
     <div className='h-Screen bg-main py-5 '>
-        <div className='w-full flex justify-between items-center py-5  px-5'>
+        <div className='w-full grid grid-cols-12  py-5  px-5'>
 
-                <div className='w-[300px] h-[150px] bg-white btnUpDev1 rounded-[15px] shadow-xl flex justify-center items-center' >
+                <div className='  col-span-12  md:col-span-6 lg:col-span-4 w-[300px] h-[150px]  bg-white my-5 text-black btnUpDev1 rounded-[15px] shadow-xl flex justify-center items-center' >
 
                 <p>{4 +" "+ "Courses"}</p>
                     
 
                 </div>
-                <div className='w-[300px] h-[150px] bg-white btnUpDev2 rounded-[15px] shadow-xl flex justify-center items-center' >
+
+                <div className=' w-[300px]   col-span-12  md:col-span-6 lg:col-span-4  h-[150px] bg-white my-5 text-black btnUpDev2 rounded-[15px] shadow-xl flex justify-center items-center' >
 
                     <p>{5 +" "+ "Assignments"}</p>
 
                 </div>
-                <div className='w-[300px] h-[150px] bg-white btnUpDev3 rounded-[15px] shadow-xl flex justify-center items-center' >
+                <div className=' w-[300px]   col-span-12  md:col-span-6 lg:col-span-4  h-[150px] bg-white my-5 text-black btnUpDev2 rounded-[15px] shadow-xl flex justify-center items-center' >
 
-                    <p>{6 +" "+ "Lectures"} </p>
+                    <p>{5 +" "+ "Assignments"}</p>
 
                 </div>
+        
 
 
         </div>
@@ -33,9 +36,9 @@ export default function Dashboard() {
         <p className='my_Courses my-4 '>My Courses</p>
 
         <div className='grid grid-cols-12 gap-3 mt-10'>
-          <div className='col-span-4'><CardComponent courseName={"FullStack Developer (React.js & Node.js)"} courseDescription={"Lorem ipsum dolor sit amet consectetur, adipisicing elit..."}/> </div>
-          <div className='col-span-4'><CardComponent courseName={"Backend Developer (asp.net)"} courseDescription={"Lorem ipsum dolor sit amet consectetur, adipisicing elit..."}/> </div>
-          <div className='col-span-4'><CardComponent courseName={"Fultter Developer"} courseDescription={"Lorem ipsum dolor sit amet consectetur, adipisicing elit..."}/> </div>
+          <div className='col-span-12 md:col-span-6  lg:col-span-4 '><Link to={"/specialCourse"}> <CardComponent courseName={"FullStack Developer (React.js & Node.js)"} courseDescription={"Lorem ipsum dolor sit amet consectetur, adipisicing elit..."}/>  </Link></div>
+          <div className='col-span-12 md:col-span-6  lg:col-span-4 '><Link to={"/specialCourse"}><CardComponent  courseName={"Backend Developer (asp.net)"} courseDescription={"Lorem ipsum dolor sit amet consectetur, adipisicing elit..."}/> </Link> </div>
+          <div className='col-span-12 md:col-span-6  lg:col-span-4 '> <Link to={"/specialCourse"}><CardComponent courseName={"Fultter Developer"} courseDescription={"Lorem ipsum dolor sit amet consectetur, adipisicing elit..."}/> </Link> </div>
         
         </div>
 

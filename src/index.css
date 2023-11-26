@@ -22,3 +22,7 @@
 .bg-main{
   background: var(--shade-light-background, #F9F9FF);
 }
+
+ul {
+  list-style-type: circle;
+}
