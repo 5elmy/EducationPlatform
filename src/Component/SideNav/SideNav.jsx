@@ -15,7 +15,7 @@ export default function SideNav() {
           
       <div className='h-screen bg-main  w-[250px] py-5 flex flex-col justify-between items-center  fixed z-10 left-0 bottom-0 top-0  '>
         <div>
-        <div className='flex justify-end gap-12 items-center '><i onClick={()=>{setToggleButton(!toggleButton)}} className="fa-solid fa-bars text-[#57007B]"></i></div>
+        <div className='flex justify-start gap-12 items-center '><i onClick={()=>{setToggleButton(!toggleButton)}} className="fa-solid fa-bars text-[#57007B]"></i></div>
         <div className=' flex flex-col gap-5 mt-5'>
             <Link to={"/dashboard"} className='flex gap-5 items-center mt-5'> <HomeIcon/> <span className='element '>Dashboard</span></Link>
             <Link to={"/courses"} className='flex gap-5 items-center mt-5'> <GraduationCap size={14} color='#57007B' /> <span className='element '>Courses</span></Link>

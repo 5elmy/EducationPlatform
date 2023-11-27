@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Lectures() {
   return (
-    <div className='grid grid-cols-12 p-5 overflow-auto'>
+    <div className='grid grid-cols-12 p-5 bg-main'>
         <div className='col-span-12 md:col-span-4 lg:col-span-3 p-5'> <Link to={"/lecture"}> <CardLecture title={"Lecture 1"} description={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, itaque?"}/></Link> </div>
         <div className='col-span-12 md:col-span-4 lg:col-span-3 p-5'> <Link to={"/lecture"}> <CardLecture title={"Lecture2" } description={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, itaque?"}/></Link> </div>
         <div className='col-span-12 md:col-span-4 lg:col-span-3 p-5'> <Link to={"/lecture"}> <CardLecture title={"Lecture 3"} description={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, itaque?"}/></Link></div>

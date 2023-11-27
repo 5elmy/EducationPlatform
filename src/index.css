@@ -20,7 +20,7 @@
 
 
 .bg-main{
-  background: var(--shade-light-background, #F9F9FF);
+  background: var(--shade-light-background, #F9F9FF) !important;
 }
 
 ul {
