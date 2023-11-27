@@ -49,7 +49,7 @@ export default function Register() {
           <Input
             label="Name"
             variant="bordered"
-            className="w-full my-5"
+            className="w-full my-5 ii"
             name='name'
             id='name'
             onChange={registrationFormik.handleChange}
@@ -58,7 +58,7 @@ export default function Register() {
           <Input
             label="Email"
             variant="bordered"
-            className="w-full my-5"
+            className="w-full my-5 ii"
             name='email'
             onChange={registrationFormik.handleChange}
 
@@ -79,7 +79,7 @@ export default function Register() {
               </button>
             }
             type={isVisible ? "text" : "password"}
-            className="w-full my-5"
+            className="w-full my-5 ii"
             name='password'
           />
 
@@ -100,7 +100,7 @@ export default function Register() {
               </button>
             }
             type={isVisible1 ? "text" : "password"}
-            className="w-full my-5"
+            className="w-full my-5 ii"
           />
           <div className='flex justify-center items-center'><Button type='submit' className='btn w-1/2 text-white py-7'>Sign Up</Button></div>
         </form>

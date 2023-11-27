@@ -46,7 +46,7 @@ export default function Login() {
           <Input
             label="Email"
             variant="bordered"
-            className="w-full my-5"
+            className="w-full my-5 ii"
             onChange={loginFormik.handleChange}
             name='email'
           />
@@ -67,7 +67,7 @@ export default function Login() {
               </button>
             }
             type={isVisible ? "text" : "password"}
-            className="w-full my-5"
+            className="w-full my-5 ii"
           />
           <div className='w-full flex justify-end'><Link to={"/forgetPasssword"} ><span className='forget text-[#57007B]'>forget Password</span></Link></div>
 

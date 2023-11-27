@@ -14,6 +14,7 @@ import Settings from './Component/Settings/Settings'
 import DashboardLayOut from './Component/DashBoardLayOut/DashboardLayOut'
 import Lectures from './Component/Lectures/Lectures'
 import SpecialLecture from './Component/SpecialLecture/SpecialLecture'
+import ToggleSideNavProvider from './Context/toggleSideNav'
 
 
 export default function App() {
@@ -32,17 +33,18 @@ export default function App() {
   {path:"/settings" ,  element:<Settings/>},
   {path:"/specialCourse" ,  element:<Lectures/>},
   {path:"/lecture" ,  element:<SpecialLecture/>},
+  {path:"/dashboardL" ,element:<DashboardLayOut/>}
   ]},
-  // {path:"/dashboardL" ,element:<DashboardLayOut/>,children:[
-  //   {}]}
+  
   ])
 
 
   
   return (
     <>
+    <ToggleSideNavProvider >
     <RouterProvider router={router} />
-      
+    </ToggleSideNavProvider>
     </>
   )
 }
