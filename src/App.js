@@ -11,10 +11,14 @@ import Courses from './Component/Courses/Courses'
 import Profile from './Component/Profile/Profile'
 import ContactUs from './Component/Contact Us/ContactUs'
 import Settings from './Component/Settings/Settings'
-import DashboardLayOut from './Component/DashBoardLayOut/DashboardLayOut'
+
 import Lectures from './Component/Lectures/Lectures'
 import SpecialLecture from './Component/SpecialLecture/SpecialLecture'
 import ToggleSideNavProvider from './Context/toggleSideNav'
+import CourseDetails from './Component/CourseDetails/CourseDetails'
+import ForgetPasssword from './Component/ForgetPassword/ForgetPassword'
+import VerificationCode from './Component/veryificationCode/VeryificationCode'
+import ResetPassword from './Component/ResetPassword/ResetPassword'
 
 
 export default function App() {
@@ -24,6 +28,9 @@ export default function App() {
   {path:"/navbar" ,  element:<NavBar/>},
   {path:"/register" ,  element:<Register/>},
   {path:"/login" ,  element:<Login/>},
+  {path:"/forgetPassword" ,  element:<ForgetPasssword/>},
+  {path:"/verifyCode" ,  element:<VerificationCode/>},
+  {path:"/resetPassword" ,  element:<ResetPassword/>},
   {index:true ,  element:<Login/>},
   {path:"/sidenav" ,  element:<SideNav/>},
   {path:"/dashboard" ,  element:<Dashboard/>},
@@ -33,13 +40,12 @@ export default function App() {
   {path:"/settings" ,  element:<Settings/>},
   {path:"/specialCourse" ,  element:<Lectures/>},
   {path:"/lecture" ,  element:<SpecialLecture/>},
-  {path:"/dashboardL" ,element:<DashboardLayOut/>}
+  {path:"/coursedetails" ,  element:<CourseDetails/>},
+ 
   ]},
   
   ])
 
-
-  
   return (
     <>
     <ToggleSideNavProvider >

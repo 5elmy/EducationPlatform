@@ -11,20 +11,20 @@ export default function SpecialLecture() {
                 </div>
                 <div className='col-span-12 md:col-span-4 flex  justify-center p-5 shadow-lg w-full '>
                   <div className='  w-full p-5'>
-                  <p className='font-bold'>Course Name</p>
-                    <div className='flex gap-2 items-center p-3'> <div className='rounded-full bg-black w-[5px] h-[5px] '></div> <p >SoftWare diploma</p></div>
-                    <p className='font-bold'>Lecture Number</p>
-                    <div className='flex gap-2 items-center p-3'> <div className='rounded-full bg-black w-[5px] h-[5px] '></div>  <p>lecture 1</p></div>
+                  <p className='font-bold text-black'>Course Name</p>
+                    <div className='flex gap-2 items-center p-3'> <div className='rounded-full bg-black w-[5px] h-[5px] '></div> <p  className='text-black'>SoftWare diploma</p></div>
+                    <p className='font-bold text-black'>Lecture Number</p>
+                    <div className='flex gap-2 items-center p-3'> <div className='rounded-full bg-black w-[5px] h-[5px] '></div>  <p className='text-black'>lecture 1</p></div>
 
                    
-                    <p className='font-bold'>Lecutre details </p>
-                   <ul  className='mx-5 p-3'>
-                    <li>html</li>
-                    <li>html3</li>
-                    <li>html5</li>
-                    <li>css</li>
-                    <li>css3</li>
-                    <li>css5</li>
+                    <p className='font-bold text-black'>Lecutre details </p>
+                   <ul  className='mx-5 p-3 ull'>
+                    <li className='text-black' >html</li>
+                    <li className='text-black'>html3</li>
+                    <li className='text-black'>html5</li>
+                    <li className='text-black'>css</li>
+                    <li className='text-black'>css3</li>
+                    <li className='text-black'>css5 </li>
                     
                    </ul>
 

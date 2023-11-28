@@ -7,21 +7,23 @@ export default function Dashboard() {
   return (
    
     <div className='h-Screen bg-main py-5 '>
-        <div className='w-full grid grid-cols-12  py-5  px-5'>
+        <div className='container mx-auto grid grid-cols-12  py-5  px-5'>
 
-                <div className='  col-span-12  md:col-span-6  lg:col-span-4  w-[300px] h-[150px]  bg-white my-5 text-black btnUpDev1 rounded-[15px] shadow-xl flex justify-center items-center' >
+                <div className=' mx-auto col-span-12  md:col-span-6  lg:col-span-4  w-[300px] h-[150px]  bg-white my-5 text-black btnUpDev1 rounded-[15px] shadow-xl flex justify-center items-center' >
 
+                
                 <p>{4 +" "+ "Courses"}</p>
+             
                     
 
                 </div>
 
-                <div className=' w-[300px]   col-span-12  md:col-span-6  lg:col-span-4    h-[150px] bg-white my-5 text-black btnUpDev2 rounded-[15px] shadow-xl flex justify-center items-center' >
+                <div className='mx-auto w-[300px]   col-span-12  md:col-span-6  lg:col-span-4    h-[150px] bg-white my-5 text-black btnUpDev2 rounded-[15px] shadow-xl flex justify-center items-center' >
 
                     <p>{5 +" "+ "Quiz"}</p>
 
                 </div>
-                <div className=' w-[300px]   col-span-12  md:col-span-6  lg:col-span-4   h-[150px] bg-white my-5 text-black btnUpDev3 rounded-[15px] shadow-xl flex justify-center items-center' >
+                <div className='mx-auto w-[300px]   col-span-12  md:col-span-6  lg:col-span-4   h-[150px] bg-white my-5 text-black btnUpDev3 rounded-[15px] shadow-xl flex justify-center items-center' >
 
                     <p>{5 +" "+ "Lecture"}</p>
 

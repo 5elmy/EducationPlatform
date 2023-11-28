@@ -1,61 +1,57 @@
 import React from 'react'
-import "./style.css"
+// import "./style.css"
 import { Button, Input } from '@nextui-org/react'
 import { EyeSlashFilledIcon } from '../../utils/icons/EyeSlashFilledIcon';
 import { EyeFilledIcon } from '../../utils/icons/EyeFilledIcon ';
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import axios from 'axios';
-export default function Login() {
+export default function ResetPassword() {
   const [isVisible, setIsVisible] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
   const [isVisible1, setIsVisible1] = React.useState(false);
   const toggleVisibility1 = () => setIsVisible1(!isVisible1);
 
   let navigate = useNavigate()
-  let loginFormik = useFormik({
+  let ResetPasswordFormik = useFormik({
     initialValues:{
-      email:"",
-      password:""
+      email:""
     },
     onSubmit:async(values)=>{
       console.log(values);
-      axios.post("https://route-ecommerce.onrender.com/api/v1/auth/signin",values).then(data=>{
-            console.log(data);
-            if(data.status === 200)
-            {
-              localStorage.setItem("token",data.data.token)
+    //   axios.post("url",values).then(data=>{
+    //         console.log(data);
+    //         if(data.status === 200)
+    //         {
+             
               
-                navigate("/dashboard")
-              
-            }
-      }).catch(error=>{
-        console.log({error});
-      })
+    //         }
+    //   }).catch(error=>{
+    //     console.log({error});
+    //   })
     }
   })
   return (
     <div className='bg-main h-screen flex justify-center items-center  relative'>
 
-      <div className='bg-[#fff]  sm:w-full md:w-1/2 lg:w-1/2 rounded-[15px] shadow-xl py-10 p-5 forCircle  relative'>
-        <h3 className='register_Color_h3 text-center text-inherit font-[Inspiration] my-5  '>Sign In Form</h3>
-        <form  onSubmit={loginFormik.handleSubmit}>
+      <div className='bg-[#fff]  w-3/4 md:w-1/2 lg:w-1/2 rounded-[15px] shadow-xl py-10 p-5 forCircle  relative'>
+       
+        <h3 className='mx-auto font-bold text-[30px] text-center text-[#57007B]  my-5  '>Reset Password</h3>
 
-        
+        <form  onSubmit={ResetPasswordFormik.handleSubmit}>
+
 
           <Input
             label="Email"
             variant="bordered"
-            className="w-full my-5 ii"
-            onChange={loginFormik.handleChange}
+            className="w-full my-5 ii "
+            onChange={ResetPasswordFormik.handleChange}
             name='email'
           />
-
           <Input
-            onChange={loginFormik.handleChange}
+             onChange={ResetPasswordFormik.handleChange}
             name='password'
-
-            label="Password"
+            label="New Password"
             variant="bordered"
             endContent={
               <button className="focus:outline-none" type="button" onClick={toggleVisibility}>
@@ -69,14 +65,10 @@ export default function Login() {
             type={isVisible ? "text" : "password"}
             className="w-full my-5 ii"
           />
-          <div className='w-full flex justify-end'><Link to={"/forgetPassword"} ><span className='forget text-[#57007B]'>forget Password</span></Link></div>
-
-
-       
-          <div className='flex justify-center items-center'><Button type='submit' className='btn w-1/2 text-white py-7'>Sign In</Button></div>
+          <div className='flex justify-center items-center'><Button  type='submit' className='btn w-1/2 text-white py-7'>Submit</Button></div>
         </form>
 
-        <p className='color_muted text-center m-auto my-5'>Don't have an account? <span className='specialColor'> <Link to={"/register"}>Signup Free!</Link></span> </p>
+      
 
       </div>
 

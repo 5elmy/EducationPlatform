@@ -85,3 +85,23 @@ export function NotificationsIcon() {
         </svg>
     )
 }
+export function NotificationsPage() {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="141" height="157" viewBox="0 0 141 157" fill="none">
+        <g filter="url(#filter0_d_64_33087)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M61.9066 29.9259C61.9066 25.1969 65.7402 21.3633 70.4692 21.3633C75.1982 21.3633 79.0318 25.1969 79.0318 29.9259V30.1643C89.0088 33.6907 96.157 43.2058 96.157 54.3904V73.0108H96.3007C96.3007 73.0108 96.3337 77.2885 99.1922 77.2885C100.269 77.2885 101.41 77.7255 102.414 78.2703C104.444 79.3724 105.358 81.6793 105.358 83.9897C105.358 88.5851 101.633 92.3104 97.0376 92.3104H43.7133C39.2214 92.3104 35.5801 88.669 35.5801 84.1772C35.5801 81.7629 36.6087 79.3805 38.7439 78.2539C39.7618 77.7168 40.8712 77.2885 41.8204 77.2885C43.3577 77.2885 44.2868 75.7275 44.7815 74.4915V54.3904C44.7815 43.2058 51.9296 33.6907 61.9066 30.1644V29.9259ZM70.2127 107.816C76.0216 107.816 80.7307 105.462 80.7307 102.557C80.7307 99.6529 76.0216 97.2984 70.2127 97.2984C64.4037 97.2984 59.6947 99.6529 59.6947 102.557C59.6947 105.462 64.4037 107.816 70.2127 107.816Z" fill="#57007B"/>
+        </g>
+        <defs>
+          <filter id="filter0_d_64_33087" x="0.580078" y="0.363281" width="139.777" height="156.453" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="14"/>
+            <feGaussianBlur stdDeviation="17.5"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.208044 0 0 0 0 0.283314 0 0 0 0 0.429427 0 0 0 0.057 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_64_33087"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_64_33087" result="shape"/>
+          </filter>
+        </defs>
+      </svg>
+    )
+}

@@ -11,49 +11,8 @@ export default function Main() {
 
   return (
     <div>
-      {
-      !token ? <>
-      
-      <NavBar/>
-      <Outlet/>
-      
-      </> :<> 
-      
-      
-   
-      <div className='grid grid-cols-12 gap-0'>
-
-            {toggleButton?     <>
-            
-              <div className='col-span-2'>
-          
-          <SideNav/>
-            </div>
-            <div className='col-span-10'>
           <NavBar/>
           <Outlet/>
-    
-            </div>
-            
-            </>  : <>
-            
-            <div className='col-span-12'>
-          <NavBar/>
-          <Outlet/>
-    
-            </div>
-            
-            </>}
-
-      </div>
-  
-     
-    
-      </>
-        
-      }
-       {/* <NavBar/>
-      <Outlet/> */}
     </div>
   )
 }

@@ -23,9 +23,16 @@
   background: var(--shade-light-background, #F9F9FF) !important;
 }
 
-ul {
+.ull {
   list-style-type: circle;
 }
 .ii{
   color:black !important;
+}
+.bg_Btn{
+  background:linear-gradient(225deg, #6675F7 0%, #57007B 100%); ;
+}
+
+ul {
+  list-style-type: none;
 }

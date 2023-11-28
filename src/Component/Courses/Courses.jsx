@@ -10,26 +10,26 @@ export default function Courses() {
         <div className='grid grid-cols-12 w-full '>
        
         <div className='col-span-12 lg:col-span-4 w-full mt-5 '> 
-        <Link to={"/specialCourse"}><CardComponent courseName={"Software Development"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/></Link>
+        <Link to={"/coursedetails"}><CardComponent courseName={"Software Development"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/></Link>
 
         </div>
         <div className='col-span-12 lg:col-span-4 w-full mt-5'>
-        <Link to={"/specialCourse"}><CardComponent courseName={"SyberSecurity"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/></Link> 
+        <Link to={"/coursedetails"}><CardComponent courseName={"SyberSecurity"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/></Link> 
         </div>
         <div className='col-span-12 lg:col-span-4 w-full mt-5'>
-        <Link to={"/specialCourse"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
+        <Link to={"/coursedetails"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
 
         </div>
         <div className='col-span-12 lg:col-span-4 w-full mt-5'>
-        <Link to={"/specialCourse"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
+        <Link to={"/coursedetails"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
 
         </div>
         <div className='col-span-12 lg:col-span-4 w-full mt-5'>
-        <Link to={"/specialCourse"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
+        <Link to={"/coursedetails"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
 
         </div>
         <div className='col-span-12 lg:col-span-4 w-full mt-5'>
-        <Link to={"/specialCourse"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
+        <Link to={"/coursedetails"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
 
         </div>
 
