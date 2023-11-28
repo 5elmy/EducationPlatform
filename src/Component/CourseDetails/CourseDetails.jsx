@@ -14,7 +14,7 @@ export default function CourseDetails() {
             </div>
 
         </div>
-        <div className='container mx-auto  border-1 my-5 bg-main'>
+        <div className='container mx-auto  border-1 py-5 bg-main'>
             <p className='font-[500px] text-[25px] text-black text-center my-8'>What you'll learn</p>
             <div className='mx-3 grid grid-cols-7'>
 
