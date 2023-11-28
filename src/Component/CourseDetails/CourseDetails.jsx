@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function CourseDetails() {
   return (
-    <div>
+    <div className='bg-white'>
         <div className='bg_Btn  mt-5'>
             <div className='container mx-auto'>
             <p className='text-[35px] font-bold text-white lg:w-1/2'>Laravel 10 - Restaurant and Food Ordering Ecommerce (2023)</p>
