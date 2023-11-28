@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EducationPlatform/static/css/main.329ccb7f.css",
-    "main.js": "/EducationPlatform/static/js/main.02efe4c0.js",
+    "main.js": "/EducationPlatform/static/js/main.439f7f99.js",
     "static/media/Frame 39925.png": "/EducationPlatform/static/media/Frame 39925.0df9f58782d4ed13653d.png",
     "static/media/fa-solid-900.ttf": "/EducationPlatform/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/Istanbul-480x350.png": "/EducationPlatform/static/media/Istanbul-480x350.e8aa817f4e5e25d94ace.png",
@@ -18,10 +18,10 @@
     "static/media/fa-v4compatibility.woff2": "/EducationPlatform/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/EducationPlatform/index.html",
     "main.329ccb7f.css.map": "/EducationPlatform/static/css/main.329ccb7f.css.map",
-    "main.02efe4c0.js.map": "/EducationPlatform/static/js/main.02efe4c0.js.map"
+    "main.439f7f99.js.map": "/EducationPlatform/static/js/main.439f7f99.js.map"
   },
   "entrypoints": [
     "static/css/main.329ccb7f.css",
-    "static/js/main.02efe4c0.js"
+    "static/js/main.439f7f99.js"
   ]
 }
