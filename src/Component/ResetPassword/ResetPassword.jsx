@@ -19,16 +19,16 @@ export default function ResetPassword() {
     },
     onSubmit:async(values)=>{
       console.log(values);
-    //   axios.post("url",values).then(data=>{
-    //         console.log(data);
-    //         if(data.status === 200)
-    //         {
+      axios.post("localhost:8000/api/send-reset-password-email",values).then(data=>{
+            console.log(data);
+            if(data.status === 200)
+            {
              
               
-    //         }
-    //   }).catch(error=>{
-    //     console.log({error});
-    //   })
+            }
+      }).catch(error=>{
+        console.log({error});
+      })
     }
   })
   return (
