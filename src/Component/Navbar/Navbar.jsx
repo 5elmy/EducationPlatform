@@ -30,9 +30,9 @@ export default function NavBar() {
                 onMenuOpenChange={setIsMenuOpen} maxWidth="full" className={`${Style.nav} py-2`} >
 
 
-                <NavbarBrand className="flex gap-3   items-center" >
+                <NavbarBrand className="flex gap-3  items-center" >
                     {
-                        token ? <NavbarMenuToggle className="text-[#57007B]" aria-label={isMenuOpen ? "Close menu" : "Open menu"} /> : <Logo />
+                        token ? <NavbarMenuToggle className="text-[#57007B]  w-[40px] h-[40px]" aria-label={isMenuOpen ? "Close menu" : "Open menu"} /> : <Logo />
                     }
                     <span className="font-[400]  text-[#57007B] font-[Inspiration] text-[24px] " >E-Learning</span>
                 </NavbarBrand>
