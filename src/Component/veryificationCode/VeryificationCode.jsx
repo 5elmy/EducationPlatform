@@ -14,18 +14,18 @@ export default function VerificationCode() {
     initialValues:{
       email:""
     },
-    // onSubmit:async(values)=>{
-    //   console.log(values);
-    //   axios.post("url",values).then(data=>{
-    //         console.log(data);
-    //         if(data.status === 200)
-    //         {
-    // 
-    //         }
-    //   }).catch(error=>{
-    //     console.log({error});
-    //   })
-    // }
+    onSubmit:async(values)=>{
+      console.log(values);
+      axios.post("http://e-learningplatform.great-site.net/api/localhost:8000/api/verification-email",values).then(data=>{
+            console.log(data);
+            if(data.status === 200)
+            {
+    
+            }
+      }).catch(error=>{
+        console.log({error});
+      })
+    }
   })
   return (
     <div className='bg-main h-screen flex justify-center items-center  relative'>

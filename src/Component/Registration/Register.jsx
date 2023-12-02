@@ -26,7 +26,7 @@ export default function Register() {
     onSubmit:async  (values)=>{
       console.log({values});
       try {
-        let result = await axios.post("localhost:8000/api/register",values)
+        let result = await axios.post("http://e-learningplatform.great-site.net/api/register",values)
         console.log(result);
         if(result.status=="201")
         {
