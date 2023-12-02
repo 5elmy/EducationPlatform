@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { RouterProvider, createBrowserRouter, createHashRouter} from 'react-router-dom'
 import Main from './Component/Main/Main'
 import Register from './Component/Registration/Register'
@@ -46,6 +46,11 @@ export default function App() {
   
   ])
 
+   useEffect(()=>{
+    if(!localStorage.getItem("theme") ){
+      localStorage.setItem("theme","light")
+    }
+   },[])
   return (
     <>
     <ToggleSideNavProvider >

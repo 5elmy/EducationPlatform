@@ -10,9 +10,10 @@ import { store } from './Redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <Provider store={store}>
   <NextUIProvider>
-  <NextThemesProvider attribute="class" >
+  <NextThemesProvider attribute="class"   defaultTheme="light">
       <App />
   </NextThemesProvider>
 </NextUIProvider>
