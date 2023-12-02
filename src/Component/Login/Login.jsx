@@ -20,18 +20,18 @@ export default function Login() {
     },
     onSubmit:async(values)=>{
       console.log(values);
-      axios.post("https://route-ecommerce.onrender.com/api/v1/auth/signin",values).then(data=>{
-            console.log(data);
-            if(data.status === 200)
-            {
-              localStorage.setItem("token",data.data.token)
+      // axios.post("",values).then(data=>{
+      //       console.log(data);
+      //       if(data.status === 200)
+      //       {
+      //         localStorage.setItem("token",data.data.token)
               
-                navigate("/dashboard")
+      //           navigate("/dashboard")
               
-            }
-      }).catch(error=>{
-        console.log({error});
-      })
+      //       }
+      // }).catch(error=>{
+      //   console.log({error});
+      // })
     }
   })
   return (
@@ -73,7 +73,7 @@ export default function Login() {
 
 
        
-          <div className='flex justify-center items-center'><Button type='submit' className='btn w-1/2 text-white py-7'>Sign In</Button></div>
+          <div className='flex justify-center items-center'><Button onClick={()=>{navigate("/dashboard")}} type='submit' className='btn w-1/2 text-white py-7'>Sign In</Button></div>
         </form>
 
         <p className='color_muted text-center m-auto my-5'>Don't have an account? <span className='specialColor'> <Link to={"/register"}>Signup Free!</Link></span> </p>

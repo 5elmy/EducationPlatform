@@ -65,7 +65,7 @@ export default function ResetPassword() {
             type={isVisible ? "text" : "password"}
             className="w-full my-5 ii"
           />
-          <div className='flex justify-center items-center'><Button  type='submit' className='btn w-1/2 text-white py-7'>Submit</Button></div>
+          <div className='flex justify-center items-center'><Button  onClick={()=>{ navigate("/login")}} type='submit' className='btn w-1/2 text-white py-7'>Submit</Button></div>
         </form>
 
       

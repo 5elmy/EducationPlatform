@@ -25,18 +25,18 @@ export default function Register() {
     },
     onSubmit:async  (values)=>{
       console.log({values});
-      try {
-        let result = await axios.post("https://route-ecommerce.onrender.com/api/v1/auth/signup",values)
-        console.log(result);
-        if(result.status=="201")
-        {
-          navigate("/login")
-        }
-        // return  result
-      } catch (error) {
-        console.log({error});
-      }
-    }
+    //   try {
+    //     let result = await axios.post("https://route-ecommerce.onrender.com/api/v1/auth/signup",values)
+    //     console.log(result);
+    //     if(result.status=="201")
+    //     {
+    //       navigate("/login")
+    //     }
+    //     // return  result
+    //   } catch (error) {
+    //     console.log({error});
+    //   }
+     }
   })
 
   return (
@@ -102,7 +102,7 @@ export default function Register() {
             type={isVisible1 ? "text" : "password"}
             className="w-full my-5 ii"
           />
-          <div className='flex justify-center items-center'><Button type='submit' className='btn w-1/2 text-white py-7'>Sign Up</Button></div>
+          <div className='flex justify-center items-center'><Button onClick={()=>{navigate("/login")}} type='submit' className='btn w-1/2 text-white py-7'>Sign Up</Button></div>
         </form>
 
         <p className='color_muted text-center m-auto my-5'>Already have an account? <span className='specialColor'><Link to={"/login"}>Sign In</Link></span> </p>

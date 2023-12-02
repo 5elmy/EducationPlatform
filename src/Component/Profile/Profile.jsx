@@ -4,8 +4,8 @@ import UploadImg from '../../utils/UploadImg'
 
 export default function Profile() {
   return (
-    <div className='container bg-main rounded-[15px] mx-auto mt-5 p-5 '>
-      <h2 className='text-[#57007B] '>My Profile</h2>
+    <div className='container bg-main rounded-[15px] mx-auto mt-10 p-5 '>
+      <h2 className='text-[#57007B]  mt-5'>My Profile</h2>
 
 
       <div className='grid grid-cols-12 gap-5'>

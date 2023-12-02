@@ -95,7 +95,7 @@ export default function NavBar() {
                 </NavbarContent>
                 <NavbarMenu className="md:w-[300px] w-[200px] " >
                     {menuItems.map((item, index) => (
-                        <NavbarMenuItem d className="mt-5" key={`${item.name}-${index}`}>
+                        <NavbarMenuItem onClick={()=>{ setIsMenuOpen(false)}} className="mt-5" key={`${item.name}-${index}`}>
                             <Link
                                 className="w-full "
                                 color={

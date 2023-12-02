@@ -34,7 +34,7 @@ export default function ForgetPasssword() {
   return (
     <div className='bg-main h-screen flex justify-center items-center  relative'>
 
-      <div className='bg-[#fff]  w-3/4 md:w-1/2 lg:w-1/2 rounded-[15px] shadow-xl py-10 p-5 forCircle  relative'>
+      <div className='bg-[#fff]  w-3/4 md:w-1/2 lg:w-1/2 rounded-[15px] shadow-xl py-10 p-5 forCircle  relative  '>
        
         <h3 className='mx-auto font-bold text-[30px] text-center text-[#57007B]  my-5  '>Please enter your email address. you will receive a verification code</h3>
 
@@ -48,7 +48,9 @@ export default function ForgetPasssword() {
             onChange={ForgetPasswordFormik.handleChange}
             name='email'
           />
-          <div className='flex justify-center items-center'><Button type='submit' className='btn w-1/2 text-white py-7'>Send Email</Button></div>
+          <div className='flex justify-center items-center'><Button onClick={()=>{
+            navigate("/verifyCode")
+          }} type='submit' className='btn w-1/2 text-white py-7'>Send Email</Button></div>
         </form>
 
       

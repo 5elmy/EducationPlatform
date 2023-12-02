@@ -45,7 +45,7 @@ export default function VerificationCode() {
             onChange={VerificationCodeFormik.handleChange}
             name='email'
           />
-          <div className='flex justify-center items-center'><Button type='submit' className='btn w-1/2 text-white py-7'>Verify Code</Button></div>
+          <div className='flex justify-center items-center'><Button onClick={()=>{navigate("/resetPassword")}} type='submit' className='btn w-1/2 text-white py-7'>Verify Code</Button></div>
         </form>
 
       
