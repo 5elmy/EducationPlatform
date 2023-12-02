@@ -20,7 +20,7 @@ export default function Login() {
     },
     onSubmit:async(values)=>{
       console.log(values);
-      axios.post("https://route-ecommerce.onrender.com/api/v1/auth/signin",values).then(data=>{
+      axios.post("http://e-learningplatform.great-site.net/api/login",values).then(data=>{
             console.log(data);
             if(data.status === 200)
             {
