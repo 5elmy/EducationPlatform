@@ -79,7 +79,7 @@ export default function NavBar() {
                         <NavbarItem>
                             <Button className={`${Style.contact} rounded-[5px]`} style={{}} href="#" variant="flat">
 
-                                <Link to={"/login"}>Login</Link>
+                                <Link to={"/login"}>Sign In</Link>
 
                             </Button>
                         </NavbarItem>
