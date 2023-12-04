@@ -8,7 +8,7 @@ export default function VerificationCode() {
   const toggleVisibility = () => setIsVisible(!isVisible);
   const [isVisible1, setIsVisible1] = React.useState(false);
   const toggleVisibility1 = () => setIsVisible1(!isVisible1);
-
+  const baseURL = "http://e-learningplatform.great-site.net/api";
   let navigate = useNavigate()
   let VerificationCodeFormik = useFormik({
     initialValues:{
@@ -16,7 +16,7 @@ export default function VerificationCode() {
     },
     onSubmit:async(values)=>{
       console.log(values);
-    //   axios.post("url",values).then(data=>{
+    //   axios.post('/send-reset-password-email',baseURL,values).then(data=>{
     //         console.log(data);
     //         if(data.status === 200)
     //         {

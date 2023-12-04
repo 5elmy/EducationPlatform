@@ -4,6 +4,7 @@ import CardComponent from '../../utils/Card/Card'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
 
+const baseURL = "http://e-learningplatform.great-site.net/api";
   // onSubmit:async(values)=>{
   //   console.log(values);
   //   axios.get('courses/{id?}','baseURL',values).then(data=>{

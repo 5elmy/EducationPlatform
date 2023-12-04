@@ -15,28 +15,29 @@ export default function Register() {
   const dispatch =useDispatch()
   let {register} = useSelector(state =>state.auth)
   let navigate =useNavigate()
-
+  
+  const baseURL = "http://e-learningplatform.great-site.net/api";
   let registrationFormik = useFormik({
     initialValues:{
       name:'',
       email:'',
       password:'',
-      rePassword:'',
+      password_confirmation:'',
     },
-    onSubmit:async  (values)=>{
-      console.log({values});
-    //   try {
-    //     let result = await axios.post('/register','baseURL',values)
-    //     console.log(result);
-    //     if(result.status=="201")
-    //     {
-    //       navigate("/login")
-    //     }
-    //     // return  result
-    //   } catch (error) {
-    //     console.log({error});
-    //   }
-     }
+  //   onSubmit:async  (values)=>{
+  //     console.log({values});
+  //     try {
+  //       let result = await axios.post('/register',baseURL,values)
+  //       console.log(result);
+  //       if(result.status=="201")
+  //       {
+  //         navigate("/login")
+  //       }
+  //       // return  result
+  //     } catch (error) {
+  //       console.log({error});
+  //     }
+  //    }
   })
 
   return (

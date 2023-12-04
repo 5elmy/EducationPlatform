@@ -4,6 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
+const baseURL = "http://e-learningplatform.great-site.net/api";
   // onSubmit:async(values)=>{
   //   console.log(values);
   //   axios.get('data-course/{id}','baseURL',values).then(data=>{

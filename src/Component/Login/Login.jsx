@@ -12,6 +12,7 @@ export default function Login() {
   const [isVisible1, setIsVisible1] = React.useState(false);
   const toggleVisibility1 = () => setIsVisible1(!isVisible1);
 
+  const baseURL = "http://e-learningplatform.great-site.net/api";
   let navigate = useNavigate()
   let loginFormik = useFormik({
     initialValues:{
@@ -20,7 +21,7 @@ export default function Login() {
     },
     onSubmit:async(values)=>{
       console.log(values);
-      // axios.post("",values).then(data=>{
+      // axios.post('/login',baseURL,values).then(data=>{
       //       console.log(data);
       //       if(data.status === 200)
       //       {

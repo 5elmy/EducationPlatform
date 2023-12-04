@@ -12,6 +12,7 @@ export default function ResetPassword() {
   const [isVisible1, setIsVisible1] = React.useState(false);
   const toggleVisibility1 = () => setIsVisible1(!isVisible1);
 
+  const baseURL = "http://e-learningplatform.great-site.net/api";
   let navigate = useNavigate()
   let ResetPasswordFormik = useFormik({
     initialValues:{
