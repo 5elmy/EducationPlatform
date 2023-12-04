@@ -19,7 +19,7 @@ export default function ResetPassword() {
     },
     onSubmit:async(values)=>{
       console.log(values);
-    //   axios.post("url",values).then(data=>{
+    //   axios.post('/reset-password/{token}','baseURL',values).then(data=>{
     //         console.log(data);
     //         if(data.status === 200)
     //         {

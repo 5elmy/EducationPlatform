@@ -26,7 +26,7 @@ export default function Register() {
     onSubmit:async  (values)=>{
       console.log({values});
     //   try {
-    //     let result = await axios.post("https://route-ecommerce.onrender.com/api/v1/auth/signup",values)
+    //     let result = await axios.post('/register','baseURL',values)
     //     console.log(result);
     //     if(result.status=="201")
     //     {
