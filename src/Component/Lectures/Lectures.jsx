@@ -1,6 +1,7 @@
 import React from 'react'
 import CardLecture from '../../utils/CardLectures/CardLectures'
 import { Link } from 'react-router-dom'
+import ReactPlayer from 'react-player'
 
 export default function Lectures() {
   return (
