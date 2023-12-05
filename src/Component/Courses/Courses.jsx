@@ -33,15 +33,15 @@ export default function Courses() {
         <Link to={"/coursedetails"}><CardComponent courseName={"CyberSecurity"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/></Link> 
         </div>
         <div className='col-span-12 lg:col-span-4 w-full mt-5'>
-        <Link to={"/coursedetails"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
+        <Link to={"/coursedetails"}><CardComponent courseName={"Data Anlasyis"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
 
         </div>
         <div className='col-span-12 lg:col-span-4 w-full mt-5'>
-        <Link to={"/coursedetails"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
+        <Link to={"/coursedetails"}><CardComponent courseName={"DevOps"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
 
         </div>
         <div className='col-span-12 lg:col-span-4 w-full mt-5'>
-        <Link to={"/coursedetails"}><CardComponent courseName={"Artificial intelligent"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
+        <Link to={"/coursedetails"}><CardComponent courseName={"Data science"} courseDescription={"Lorem, ipsum dolor sit amet consectetur adipisicing elit."}/> </Link>
 
         </div>
         <div className='col-span-12 lg:col-span-4 w-full mt-5'>
