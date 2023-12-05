@@ -3,12 +3,13 @@ import { Button, Input } from '@nextui-org/react'
 import { useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import axios from 'axios';
+import baseURL from "./../../utils/constants.js";
+
 export default function VerificationCode() {
   const [isVisible, setIsVisible] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
   const [isVisible1, setIsVisible1] = React.useState(false);
   const toggleVisibility1 = () => setIsVisible1(!isVisible1);
-  const baseURL = "http://e-learningplatform.great-site.net/api";
   let navigate = useNavigate()
   let VerificationCodeFormik = useFormik({
     initialValues:{

@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useFormik } from 'formik';
 import axios from 'axios';
+import baseURL from "./../../utils/constants.js";
 export default function Register() {
   const [isVisible, setIsVisible] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
@@ -16,7 +17,7 @@ export default function Register() {
   let {register} = useSelector(state =>state.auth)
   let navigate =useNavigate()
   
-  const baseURL = "http://e-learningplatform.great-site.net/api";
+
   let registrationFormik = useFormik({
     initialValues:{
       name:'',
