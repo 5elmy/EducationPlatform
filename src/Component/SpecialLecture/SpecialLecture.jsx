@@ -1,12 +1,14 @@
 import React from 'react'
-import img from "../../Frame 39925.png"
+// import img from "../../Frame 39925.png"
+import ReactPlayer from 'react-player'
+
 export default function SpecialLecture() {
     return (
         <div>
             <div className='grid grid-cols-12 p-5   bg-main'>
                 <div className='col-span-12 md:col-span-8'>
                     <div className='w-full'>
-                        <img src={img} alt="" />
+                    <ReactPlayer url='https://www.twitch.tv/videos/106400740' />
                     </div>
                 </div>
                 <div className='col-span-12 md:col-span-4 flex  justify-center p-5 shadow-lg w-full '>

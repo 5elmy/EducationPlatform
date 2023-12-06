@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useFormik } from 'formik';
 import axios from 'axios';
+import baseURL from "./../../utils/constants.js";
 export default function Register() {
   const [isVisible, setIsVisible] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
@@ -15,28 +16,29 @@ export default function Register() {
   const dispatch =useDispatch()
   let {register} = useSelector(state =>state.auth)
   let navigate =useNavigate()
+  
 
   let registrationFormik = useFormik({
     initialValues:{
       name:'',
       email:'',
       password:'',
-      rePassword:'',
+      password_confirmation:'',
     },
-    onSubmit:async  (values)=>{
-      console.log({values});
-    //   try {
-    //     let result = await axios.post("https://route-ecommerce.onrender.com/api/v1/auth/signup",values)
-    //     console.log(result);
-    //     if(result.status=="201")
-    //     {
-    //       navigate("/login")
-    //     }
-    //     // return  result
-    //   } catch (error) {
-    //     console.log({error});
-    //   }
-     }
+  //   onSubmit:async  (values)=>{
+  //     console.log({values});
+  //     try {
+  //       let result = await axios.post('/register',baseURL,values)
+  //       console.log(result);
+  //       if(result.status=="201")
+  //       {
+  //         navigate("/login")
+  //       }
+  //       // return  result
+  //     } catch (error) {
+  //       console.log({error});
+  //     }
+  //    }
   })
 
   return (

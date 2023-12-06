@@ -3,12 +3,13 @@ import { Button, Input } from '@nextui-org/react'
 import { useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import axios from 'axios';
+import baseURL from "./../../utils/constants.js";
+
 export default function VerificationCode() {
   const [isVisible, setIsVisible] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
   const [isVisible1, setIsVisible1] = React.useState(false);
   const toggleVisibility1 = () => setIsVisible1(!isVisible1);
-
   let navigate = useNavigate()
   let VerificationCodeFormik = useFormik({
     initialValues:{
@@ -16,7 +17,7 @@ export default function VerificationCode() {
     },
     onSubmit:async(values)=>{
       console.log(values);
-    //   axios.post("url",values).then(data=>{
+    //   axios.post('/send-reset-password-email',baseURL,values).then(data=>{
     //         console.log(data);
     //         if(data.status === 200)
     //         {

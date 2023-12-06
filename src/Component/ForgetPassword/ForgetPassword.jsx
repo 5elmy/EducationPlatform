@@ -6,6 +6,7 @@ import { EyeFilledIcon } from '../../utils/icons/EyeFilledIcon ';
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import axios from 'axios';
+import baseURL from "./../../utils/constants.js";
 export default function ForgetPasssword() {
   const [isVisible, setIsVisible] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
@@ -19,7 +20,7 @@ export default function ForgetPasssword() {
     },
     onSubmit:async(values)=>{
       console.log(values);
-    //   axios.post("url",values).then(data=>{
+    //   axios.post('/reset-password/{token}','baseURL',values).then(data=>{
     //         console.log(data);
     //         if(data.status === 200)
     //         {

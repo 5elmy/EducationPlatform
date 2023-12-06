@@ -2,6 +2,27 @@ import { Button, Spinner } from '@nextui-org/react'
 import { Check } from 'phosphor-react'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import baseURL from "./../../utils/constants.js";
+
+  // onSubmit:async(values)=>{
+  //   console.log(values);
+  //   axios.get('data-course/{id}','baseURL',values).then(data=>{
+  //         console.log(data);
+  //         if(data.status === 200)
+  //         {
+           
+            
+  //         }
+  //   }).catch(error=>{
+  //     console.log({error});
+  //   })
+  
+// axios({
+//   url:'data-course/{id}',
+//   baseURL:'',
+//   method:'GET'
+// })
 
 export default function CourseDetails() {
   return (
