@@ -26,6 +26,7 @@
     "framer-motion": "^10.16.4",
     "moment": "^2.29.4",
     "next-themes": "^0.2.1",
+    "pdf-viewer-reactjs": "^2.2.3",
     "phosphor-react": "^1.4.1",
     "postcss": "^8.4.31",
     "react": "^18.2.0",

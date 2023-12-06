@@ -1,6 +1,7 @@
 import React from 'react'
 // import img from "../../Frame 39925.png"
 import ReactPlayer from 'react-player'
+import PDFViewer from 'pdf-viewer-reactjs'
 
 export default function SpecialLecture() {
     return (
@@ -27,7 +28,11 @@ export default function SpecialLecture() {
                     <li className='text-black'>css</li>
                     <li className='text-black'>css3</li>
                     <li className='text-black'>css5 </li>
-                    
+                    <PDFViewer
+            document={{
+                url: 'https://arxiv.org/pdf/quant-ph/0410100.pdf',
+            }}
+        />
                    </ul>
 
                   </div>
